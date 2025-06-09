@@ -1,0 +1,15 @@
+Date,Time,Latitude,Longitude,Type,Depth,Depth Error,Depth Seismic Stations,Magnitude,Magnitude Type,Magnitude Error,Magnitude Seismic Stations,Azimuthal Gap,Horizontal Distance,Horizontal Error,Root Mean Square,ID,Source,Location Source,Magnitude Source,Status,city_name
+12/20/1966,15:30:01,37.3021667,-116.4083333,Nuclear Explosion,1.2,31.61,16.0,5.62,ML,0.245,10.0,261.0,1.476,99.0,0.86,CI3329931,CI,CI,CI,Reviewed,"Rachel, NV"
+04/26/1968,15:00:02,37.2953333,-116.4556667,Nuclear Explosion,1.2,31.61,17.0,5.63,ML,0.125,6.0,261.0,1.438,99.0,1.03,CI3342128,CI,CI,CI,Reviewed,"Rachel, NV"
+12/19/1968,16:30:01,37.2315,-116.4736667,Nuclear Explosion,1.4,31.61,16.0,5.52,ML,0.219,6.0,257.0,1.415,99.0,1.36,CI3342181,CI,CI,CI,Reviewed,"Rachel, NV"
+09/16/1969,14:30:01,37.3141667,-116.4606667,Nuclear Explosion,1.2,31.61,13.0,5.82,ML,0.187,8.0,268.0,1.437,99.0,0.33,CI3326197,CI,CI,CI,Reviewed,"Nevada, USA"
+03/26/1970,19:00:01,37.3005,-116.5341667,Nuclear Explosion,1.2,31.61,16.0,5.54,ML,0.41,10.0,260.0,1.377,99.0,0.35,CI3325031,CI,CI,CI,Reviewed,"Nevada, USA"
+06/06/1973,13:00:01,37.245,-116.346,Nuclear Explosion,1.1,31.61,17.0,5.64,ML,0.155,8.0,259.0,1.517,99.0,0.55,CI3319623,CI,CI,CI,Reviewed,"Rachel, NV"
+11/22/1974,16:25:34,30.25,-114.8,Earthquake,6.0,31.61,20.0,5.55,ML,0.055,4.0,312.0,2.641,99.0,3.22,CI3319062,CI,CI,CI,Reviewed,Outside US
+06/26/1975,12:30:01,37.2788333,-116.3686667,Nuclear Explosion,6.0,31.61,19.0,5.52,ML,0.341,13.0,260.0,1.504,99.0,3.44,CI12328563,CI,CI,CI,Reviewed,"Rachel, NV"
+10/28/1975,14:30:00,37.2901667,-116.4115,Nuclear Explosion,1.3,31.61,19.0,5.67,ML,0.302,8.0,260.0,1.472,99.0,2.75,CI3006257,CI,CI,CI,Reviewed,"Nevada, USA"
+01/03/1976,19:15:01,37.2965,-116.3331667,Nuclear Explosion,1.5,31.61,20.0,5.84,ML,0.123,8.0,261.0,1.534,99.0,0.44,CI3001652,CI,CI,CI,Reviewed,"Nevada, USA"
+05/18/1980,15:32:11,46.2073333,-122.188,Earthquake,1.51,0.56,18.0,5.7,MD,0.08,1.0,62.0,0.008296,0.682,0.22,UW10084803,UW,UW,UW,Reviewed,"Castle Rock, WA"
+09/07/1980,04:36:38,38.1383333,-118.3913333,Earthquake,6.0,31.61,5.0,5.52,ML,0.206,12.0,333.0,1.09,8.02,0.33,CI9735242,CI,CI,CI,Reviewed,"California, USA"
+02/21/2008,14:16:03,41.1444,-114.8721,Earthquake,7.9,1.9,18.0,6.2,ML,0.15,4.0,95.21,0.318,1.61,0.1855,NN00234425,NN,NN,NN,Reviewed,"Wendover, UT"
+05/28/2014,21:15:07,18.045,-68.3509,Earthquake,90.0,2.0,31.0,5.8,ML,0.0,12.0,262.8,0.46712395,2.9,0.41,PR14148004,PR,PR,PR,Reviewed,"Punta Cana, Dominican Republic"
