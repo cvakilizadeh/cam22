@@ -94,4 +94,5 @@ if __name__ == "__main__":
                 valid_entries = validate_schedule(proposed_schedule)
                 all_valid_schedules.extend(valid_entries)
         except Exception as e:
-            print("⚠️ Could not parse schedule structure:", e)
+            pass
+
