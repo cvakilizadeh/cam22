@@ -19,6 +19,14 @@ else:
     st.warning("Please upload a course catalog CSV to begin.")
     st.stop()
 
+# --- Display chat history above input ---
+st.markdown("## Conversation History")
+for user_msg, assistant_msg in st.session_state.conversation:
+    st.markdown(f"**You:** {user_msg}")
+    if assistant_msg:
+        st.markdown(f"**Assistant:** {assistant_msg}")
+
+# Chatbot input line appears below chat history
 user_input = st.text_input("What kind of classes or schedule are you looking for?")
 
 col1, col2, col3 = st.columns(3)
@@ -40,15 +48,13 @@ if send and user_input.strip():
     append_user_message(user_input)
     reply = get_chat_response(st.session_state.conversation)
     add_assistant_reply(reply)
-    st.markdown("**Assistant:**")
-    st.write(reply)
+    st.rerun()
 
 elif show_schedule:
     append_user_message("Please show me the current schedule you have planned so far.")
     reply = get_chat_response(st.session_state.conversation)
     add_assistant_reply(reply)
-    st.markdown("**Current Schedule:**")
-    st.write(reply)
+    st.rerun()
 
 elif done:
     append_user_message(
@@ -67,8 +73,14 @@ elif done:
             text = text.split("```")[1].strip()
         # Try to read as CSV
         df = pd.read_csv(io.StringIO(text))
-        df.to_csv("validated_schedule.csv", index=False)
-        st.success("✅ Schedule saved to validated_schedule.csv")
+        csv_bytes = text.encode("utf-8")
+        st.success("✅ Schedule ready for download!")
         st.dataframe(df)
+        st.download_button(
+            label="Download schedule as CSV",
+            data=csv_bytes,
+            file_name="validated_schedule.csv",
+            mime="text/csv"
+        )
     except Exception as e:
         st.error(f"❌ Error parsing GPT reply as CSV: {e}")
