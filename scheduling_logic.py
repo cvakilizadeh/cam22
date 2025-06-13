@@ -11,7 +11,7 @@ def set_catalog(df):
     catalog_df.columns = catalog_df.columns.str.strip().str.lower()
     raw_csv_text = catalog_df.to_csv(index=False)
 
-client = OpenAI(api_key="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")  # Use your key here
+client = OpenAI(api_key="key")  # Use your key here
 
 def validate_schedule(possible_schedule):
     valid = []
